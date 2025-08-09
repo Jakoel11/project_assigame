@@ -1,7 +1,6 @@
 // routes/auth.routes.js
 // ============================================================================
 // Routes d'authentification : inscription, connexion, profil protégé
-// Dépendances : contrôleur d'auth, middlewares (rate-limit, validation, auth)
 // ============================================================================
 
 const express = require('express');
@@ -11,23 +10,29 @@ const router = express.Router();
 const authController = require('../controllers/auth.controller');
 
 // Middlewares
-const validate = require('../middlewares/validate');          // → valide le body avec un schéma
-const rateLimiter = require('../middlewares/rateLimiter');    // → limite les tentatives (ex: /login)
-const auth = require('../middlewares/auth');                  // → vérifie le JWT (Authorization: Bearer <token>)
+const validate = require('../middlewares/validate');          
+const rateLimiter = require('../middlewares/rateLimiter');   
+const auth = require('../middlewares/auth');                  
 
-// Schémas de validation (Yup/Joi selon ton implémentation)
+// Schémas de validation
 const { registerSchema, loginSchema } = require('../validators/auth.validator');
 
 // ---------------------------------------------------------------------------
-// POST /api/auth/register
-// Inscription d'un utilisateur
-// - Valide le body (full_name, email, phone, password)
-// - Délègue au contrôleur (hash, insert, gestion doublon)
+// POST /api/auth/register - Inscription d'un utilisateur
 // ---------------------------------------------------------------------------
 router.post('/register', validate(registerSchema), authController.register);
 
 // ---------------------------------------------------------------------------
-// POST /api/auth/login
+// POST /api/auth/login - Connexion d'un utilisateur
+// ---------------------------------------------------------------------------
+router.post('/login', rateLimiter, validate(loginSchema), authController.login);
+
+// ---------------------------------------------------------------------------
+// GET /api/auth/profile - Récupération du profil utilisateur (protégé)
+// ---------------------------------------------------------------------------
+router.get('/profile', auth, authController.profile);
+
+module.exports = router;
 // Connexion d'un utilisateur
 // - Rate limiter (ex: 5 essais / 15 min)
 // - Valide le body (email, password)
