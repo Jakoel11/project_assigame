@@ -1,0 +1,12 @@
+=== Test direct des conversations - 2025-08-09T07:35:14.940Z ===
+
+[2025-08-09T07:35:14.954Z] 🚀 Démarrage des tests de conversation
+[2025-08-09T07:35:14.956Z] 
+--- 1. Authentification des utilisateurs ---
+[2025-08-09T07:35:15.433Z] ✅ Utilisateur 1 enregistré
+[2025-08-09T07:35:15.555Z] ✅ Utilisateur 2 enregistré
+[2025-08-09T07:35:15.556Z] 
+--- 2. Création d'une annonce ---
+[2025-08-09T07:35:15.565Z] ⚠️ Erreur lors de la création de l'annonce: Request failed with status code 401
+[2025-08-09T07:35:15.638Z] 
+❌ Erreur: Impossible de créer ou de trouver une annonce

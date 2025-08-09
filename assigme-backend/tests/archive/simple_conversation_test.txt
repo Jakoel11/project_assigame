@@ -1,0 +1,7 @@
+=== Test simple de conversation - 2025-08-09T07:47:04.136Z ===
+
+Récupération des annonces:
+Nombre d'annonces: undefined
+Aucune annonce trouvée
+
+❌ Test échoué: Aucune annonce disponible

@@ -1,0 +1,1 @@
+🔍 Test de logging dans un fichier

@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "annonces": [
+    {
+      "id": 75,
+      "user_id": 115,
+      "titre": "Villa ",
+      "description": "Nouvellement construite",
+      "prix": "140000000.00",
+      "categorie_id": 1,
+      "sous_categorie_id": 2,
+      "ville": "Lomé",
+      "images": "image.jpg",
+      "is_boosted": false,
+      "date_creation": "2025-08-09T06:41:09.688Z",
+      "updated_at": "2025-08-09T06:42:40.741Z",
+      "vendeur": "Koffi",
+      "categorie_nom": "Alimentation & Boissons"
+    },
+    {
+      "id": 74,
+      "user_id": 113,
+      "titre": "Vente Moto vintage232",
+      "description": "Très bon état, 10 ans d’âge232.",
+      "prix": "1200022.00",
+      "categorie_id": 6,
+      "sous_categorie_id": 8,
+      "ville": "Lomé",
+      "images": "https://exemple.com/velo.jpg",
+      "is_boosted": false,
+      "date_creation": "2025-08-09T01:58:01.382Z",
+      "updated_at": "2025-08-09T01:58:01.382Z",
+      "vendeur": "Koffi Joel",
+      "categorie_nom": "Sport & Loisirs"
+    },
+    {
+      "id": 72,
+      "user_id": 113,
+      "titre": "Vélo vintage restauré",
+      "description": "Description mise à jour",
+      "prix": "140000.00",
+      "categorie_id": 1,
+      "sous_categorie_id": 2,
+      "ville": "Paris",
+      "images": "image.jpg",
+      "is_boosted": false,
+      "date_creation": "2025-08-09T01:53:30.879Z",
+      "updated_at": "2025-08-09T01:54:49.231Z",
+      "vendeur": "Koffi Joel",
+      "categorie_nom": "Alimentation & Boissons"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "limit": 20,
+    "total": 3,
+    "totalPages": 1
+  }
+}

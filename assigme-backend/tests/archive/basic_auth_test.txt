@@ -1,0 +1,18 @@
+=== Test basique d'authentification - 2025-08-09T07:36:28.564Z ===
+
+Test d'enregistrement:
+Status: 201
+Data: {
+  "message": "Inscription réussie ✅"
+}
+
+Test de connexion:
+Status: 200
+Data: {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIwLCJlbWFpbCI6ImJhc2ljLnRlc3RAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTQ3MjQ5ODgsImV4cCI6MTc1NDcyODU4OH0.WgkYGjf-IaQBDV0McMCQ9yXAA47IhcFsECGsGWAE5BU",
+  "message": "Connexion réussie ✅"
+}
+
+Résultats:
+- Enregistrement: Réussi
+- Connexion: Réussie

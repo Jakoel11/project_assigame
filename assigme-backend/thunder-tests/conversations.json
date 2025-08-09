@@ -1,0 +1,43 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Assigmé Conversations Tests",
+  "dateExported": "2025-08-08T12:00:00.000Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "name": "1. Créer Conversation",
+      "url": "http://localhost:5000/api/conversations/annonce/1",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{token}}"
+      }
+    },
+    {
+      "name": "2. Envoyer Message Vocal",
+      "url": "http://localhost:5000/api/conversations/1/voice",
+      "method": "POST",
+      "headers": {
+        "Authorization": "Bearer {{token}}"
+      },
+      "body": {
+        "type": "form-data",
+        "form-data": [
+          {
+            "name": "voice",
+            "value": "@file:test-voice.txt"
+          }
+        ]
+      }
+    },
+    {
+      "name": "3. Lister Messages",
+      "url": "http://localhost:5000/api/conversations/1/messages",
+      "method": "GET",
+      "headers": {
+        "Authorization": "Bearer {{token}}"
+      }
+    }
+  ]
+}

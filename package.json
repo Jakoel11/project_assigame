@@ -1,0 +1,39 @@
+﻿{
+  "name": "assigme-project",
+  "version": "1.0.0",
+  "description": "Plateforme complète de petites annonces - Backend API + Frontend React",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "cd assigme-backend && npm run dev",
+    "dev:frontend": "cd assigme-frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "cd assigme-backend && npm start",
+    "start:frontend": "cd assigme-frontend && npm start",
+    "install:all": "npm install && cd assigme-backend && npm install && cd ../assigme-frontend && npm install",
+    "build:frontend": "cd assigme-frontend && npm run build",
+    "test:backend": "cd assigme-backend && npm test",
+    "test:frontend": "cd assigme-frontend && npm test"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "react",
+    "postgresql",
+    "jwt",
+    "petites-annonces",
+    "api-rest"
+  ],
+  "author": "Équipe Assigmé",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/assigme-project.git"
+  }
+}

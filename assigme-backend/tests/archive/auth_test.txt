@@ -1,0 +1,11 @@
+=== Test d'authentification - 2025-08-09T07:36:06.410Z ===
+
+🚀 Démarrage du test d'authentification
+
+--- 1. Test de connexion au serveur ---
+✅ Serveur en ligne: 🎯 API Assigmé en ligne
+
+--- 2. Enregistrement d'un utilisateur ---
+✅ Utilisateur enregistré avec succès, token obtenu: Non
+
+❌ Erreur: Aucun token obtenu
